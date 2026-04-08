@@ -41,6 +41,12 @@ function Signup() {
 
   } catch (error) {
 
+    console.error("[SIGNUP] Request failed")
+    console.error("[SIGNUP] HTTP status:", error.response?.status)
+    console.error("[SIGNUP] Response data:", error.response?.data)
+    console.error("[SIGNUP] Request config:", error.config)
+    console.error("[SIGNUP] Full error:", error)
+
     const message = error.response?.data?.message || "Signup failed. Please try again."
     setError(message)
 

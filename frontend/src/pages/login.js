@@ -47,7 +47,7 @@ function Login() {
       <div className="content">
         <div className="card">
 
-          <h1>Welcome Back</h1>
+          <h1>Welcome</h1>
           <p>Sign in to your account</p>
 
           {error && <p className="error-text">{error}</p>}
